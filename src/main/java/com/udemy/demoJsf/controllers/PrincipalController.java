@@ -21,6 +21,8 @@ import com.udemy.demoJsf.services.EmpleadoService;
 @ViewScoped
 public class PrincipalController {
 	private List<Empleado> empleados;
+	private List<Empleado> empleadosFiltrados;
+	
 	EmpleadoService empleadoService=new EmpleadoService();
 	
 	/*
@@ -52,6 +54,20 @@ public class PrincipalController {
 	 */
 	public void setEmpleados(List<Empleado> empleados) {
 		this.empleados = empleados;
+	}
+
+	/**
+	 * @return the empleadosFiltrados
+	 */
+	public List<Empleado> getEmpleadosFiltrados() {
+		return empleadosFiltrados;
+	}
+
+	/**
+	 * @param empleadosFiltrados the empleadosFiltrados to set
+	 */
+	public void setEmpleadosFiltrados(List<Empleado> empleadosFiltrados) {
+		this.empleadosFiltrados = empleadosFiltrados;
 	}
 	
 	
